@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vardenio pavardenio HTML kontrolinis darbas</title>
+    <!-- šriftai Montserrat ir Raleway-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #FFF1B4;
+        }
+
+        h1 {
+            font-size: 35px;
+            font-weight: bold;
+            font-family: Raleway;
+        }
+
+        header {
+            background-color: #F2C029;
+            width: 960px;
+            height: 100px;
+            padding: 20px;
+        }
+
+        nav {
+            width: 960px;
+            text-align: center;
+            font-weight: bold;
+            color: #fff;
+            background-color: #590902;
+            padding: 20px;
+            font-size: 25px;
+            font-family: Raleway;
+        }
+
+        main {
+            width: 960px;
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        .img-small {
+            width: 200px;
+        }
+
+        footer {
+            background-color: #F2C029;
+            width: 980px;
+            height: 20px;
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        a {
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Logo</h1>
+    </header>
+    <nav><a href="index.html">News</a>
+        | <a href="gallery.html">Photo Gallery</a>
+        | <a href="registration.html">Registration</a>
+    </nav>
+    <header
+        style="background-image: url(images/autum_large.jpg); border: 15px solid #fff; width:930px; margin: 20px 0px;">
+    </header>
+    <main>
+        <h1>Registration</h1>
+        <form>
+            <fieldset style="margin: 0 auto; width: 600px;">
+                <legend>RegForm</legend>
+                <table style="width:700px">
+                    <tr>
+                        <td style="width: 200px;">Name</td>
+                        <td><input type="text" id="fname" name="fname" placeholder="Enter name Here"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" id="password" name="password" placeholder="Enter PAsword Here"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email" id="email" name="email" placeholder="Enter Email Here"></td>
+                    </tr>
+                    <tr>
+                        <td>Date</td>
+                        <td><input type="date" id="reg-date" name="reg-date"></td>
+                    </tr>
+                    <tr>
+                        <td>PhoneNo</td>
+                        <td><input type="number" id="phone" name="phone" min="000000" max="999999"></td>
+                    </tr>
+                    <tr>
+                        <td>Select file</td>
+                        <td><input type="file" id="file" name="file"></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td><input type="radio" id="male" name="gender" value="male" checked>
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Language</td>
+                        <td><input type="checkbox" id="hindi-language" name="language" value="Hindi" checked>
+                            <label for="hindi-language"> Hindi</label>
+                            <input type="checkbox" id="en-language" name="language" value="English">
+                            <label for="en-language">English</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Course</td>
+                        <td> <select name="course" id="course">
+                                <option value="CS">CS</option>
+                                <option value="HTML">HTML</option>
+                                <option value="CSS">CSS</option>
+                                <option value="Java Script">Java Script</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Comment</td>
+                        <td><textarea id="w3review" name="w3review" rows="8" cols="50"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" value="Register now">
+                <input type="reset" value="Refresh">
+
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        Copyright @ Jonas Jonaitis
+    </footer>
+</body>
+
+</html>
